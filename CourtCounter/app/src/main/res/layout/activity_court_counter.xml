@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.CourtCounter"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A Score"
+        android:layout_margin="28dp"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textColor="#616161"
+        android:textFont="sans-serif-medium"
+        />
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textFont="sans-serif-light"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="+3 points"
+    android:textSize="25sp"
+    android:padding="4dp"
+    android:layout_margin="8dp"
+    android:id="@+id/three1"
+    android:onClick="addthree"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 points"
+        android:textSize="25sp"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:id="@+id/two1"
+        android:onClick="addtwo"/>
+    <Button
+        android:id="@+id/one1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FREE THROW"
+        android:textSize="25sp"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:onClick="free"/>
+
+</LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.courtcounter.CourtCounter"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B Score"
+            android:layout_margin="28dp"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 points"
+            android:textSize="25sp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:id="@+id/three"
+            android:onClick="addthree2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 points"
+            android:textSize="25sp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:id="@+id/two2"
+            android:onClick="addtwo2"/>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:textSize="25sp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:onClick="free2"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"/>
+</RelativeLayout>
