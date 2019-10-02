@@ -20,7 +20,7 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
+        //getPackageName gets the package name from appContext file 
         assertEquals("com.example.android.courtcounter", appContext.getPackageName());
     }
 }
